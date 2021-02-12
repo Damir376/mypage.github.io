@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="photo/logo.svg">
+    <title>Добро пожаловать | ВКонтакте</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <div class="logo-img">
+                <img src="photo/logo.svg">
+                <h3 style="margin-right: 10px;">вконтакте</h3>
+            </div>
+            <input style="border-radius: 8px;
+            background-color: var(--backcolor-2);
+            text-align: left;" type="text" placeholder="Поиск">
+        </div>
+        
+        <div style="font-size: 11.3px; font-weight: bold;">Switch to English</div>
+    </header>
+    <main>
+        <style>
+            main {
+                justify-content: flex-end;
+            }
+            input[type=text], input[type=password] {
+                width: 200px;
+            }
+            a {
+                font-size: 80%;
+                text-decoration: none;
+                padding: 12px;
+            }
+            a:hover {
+                text-decoration: underline;
+            }
+            .rew {
+                display: flex;
+                flex-flow: row nowrap;
+            }
+            .rew input:first-child {
+                margin-right: 5px;
+            }
+            .rew input:last-child {
+                margin-left: 5px;
+            }
+            .block {
+                max-width: 280px;
+            }
+        </style>
+        <div style="display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        ">
+            <div style="padding-top: 10px; justify-content: flex-start; align-items: center; text-align: center; display: flex; width: 74%; height: 700px; margin-right: 3%; flex-direction: column;">
+                <h3>ВКонтакте для мобильных устройств</h3>
+                <small style="margin-top: 10px;">Установите официальное мобильное приложение ВКонтакте и оставайтесь в курсе новостей ваших друзей, где бы вы ни находились.</small>
+                <a href="https://play.google.com/store/apps/details?id=com.vkontakte.android"><img src="photo/app.png"></a>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: column;">
+            <div style="flex-flow: row;" class="block">
+                <form name="auth" method="POST">
+                    <table>
+                        <tr>
+                            <td>
+                                <input type="text" placeholder="Телефон или Email" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="password" placeholder="Пароль" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input style="width: 40%;" type="submit" value="Войти">
+                                <a style="width: 60%; color: #5181b8;" href="#">Забыли пароль?</a>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+            <div class="block">
+                <form name="reg" method="POST">
+                    <table>
+                        <tr>
+                            <td style="display: block;">
+                                <p style="font-weight: bold; font-size: large; color: #1c1c1c;">Впервые ВКонтакте?</p>
+                                <small>Моментальная регистрация</small>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="text" placeholder="Ваше имя" required>
+                            </td>
+                            <td>
+                                <input type="text" placeholder="Ваша фамилия" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="password" placeholder="Логин" required>
+                            </td>
+                            <td>
+                                <input type="password" placeholder="Пароль" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input style="width: 100%; background-color: #4bb34b;" type="submit" value="Продолжить регистрацию">
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer style="display: flex; justify-content: space-around;">
+        <div style="color: gray; border-top: 1px solid #dce1e6; padding: 24px 0 35px 0; display: flex; justify-content: space-around;">
+                <div style="margin-right: 20px;">
+                    <a href="#">ВКонтакте © 2006–2021</a>
+                </div>
+                <div style="margin-right: 20px;">
+                    <a href="#">О ВКонтакте</a>
+                    <a href="#">Правила</a>
+                    <a href="#">Для бизнеса</a>
+                    <a href="#">Разработчикам</a>
+                </div>
+                <div>
+                    <a href="#">Русский</a>
+                    <a href="#">Українська</a>
+                    <a href="#">English</a>
+                    <a href="#">все языки »</a>
+                </div>
+            </div>
+    </footer>
+</body>
+</html>
